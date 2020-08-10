@@ -1,0 +1,25 @@
+
+
+.float{
+	position:fixed;
+	width:223px;
+	height:60px;
+	top:60px;
+	right:60px;
+    background-color:#7568FA;
+    color:#FFF;
+    border-radius:50px;
+    border: 1px solid black;
+    text-align:center;
+    line-height: 60px;
+    
+    font-size:30px;
+    font-family: Noto Sans KR;
+    font-weight: 900;
+}
+
+.float:hover{
+    background-color: #FFFC79;
+    color: black;
+}
+

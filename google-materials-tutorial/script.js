@@ -1,7 +1,1 @@
-function on() {
-    document.getElementById("overlay").style.display = "block";
-  }
-  
-  function off() {
-    document.getElementById("overlay").style.display = "none";
-  }
+mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));

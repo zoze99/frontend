@@ -4,8 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 <body>
     
+    <style>
+        img{width: 100%;}
+        h1{color: black;}
+        body{background: skyblue;}
+        button{border:none; color:white; background-color:pink; padding: 5px 10px; border-radius: 15px;}
+    </style>
+
+    <h1>안녕하세요!</h1>
+    <button onclick="func_confirm()">처음이신가요?</button>
+    <button onclick="func_prompt()">나한테 온 편지 찾기</button>
+
+    <script>
+        function func_prompt(){
+            if(prompt('실명을 입력해주세요') === '조정민'){
+                alert('안녕 나');
+            }else {
+                alert('죄송해요, 아직 당신에게 쓴 편지가 없어요.');
+            }; //확인 말구 취소 눌렀을 때를 제어하려면 어케 해야 하지?;;
+        }
+        function func_confirm(){
+            if(confirm('튜토리얼을 보시겠어요?')){
+                alert('네, 튜토리얼을 진행할게요!');
+            }else {
+                alert('알겠어요! 마음껏 사용해주세요.');
+            }
+        }
+
+        $('h1').css('color', 'red');
+        
+    </script>
+
+
+
 </body>
 </html>
